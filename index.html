@@ -7,8 +7,13 @@
 </style>
 
 <body>
-    <h1>Hello World</h1>
-    <p id="test">I'm hosted with GitHub Pages.</p>
+    <div style="text-align:center">
+        <h1>Hello World</h1>
+        <p id="test">I'm hosted with GitHub Pages.</p>
+        <object>
+            <embed type="image/svg+xml" src="hidayatullahap.svg"/>
+        </object>
+    </div>
 </body>
 
 </html>
@@ -16,7 +21,7 @@
     window.addEventListener("load", function () {
         var f = document.getElementById('test');
         setInterval(function () {
-            f.innerHTML = "I'm hosted with GitHub Pages. Hallo gina, apa kabssss";
+            f.innerHTML = "I'm hosted with GitHub Pages.";
             f.style.color = (f.style.color == 'red' ? 'blue' : 'red');
         }, 1000);
     }, false);
