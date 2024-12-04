@@ -574,15 +574,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
-.bg-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(133 159 61 / var(--tw-bg-opacity, 1));
-}
-
 .bg-darkest {
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 25 / var(--tw-bg-opacity, 1));
@@ -603,11 +594,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.text-lightest {
-  --tw-text-opacity: 1;
-  color: rgb(246 252 223 / var(--tw-text-opacity, 1));
 }
 
 .text-light {
