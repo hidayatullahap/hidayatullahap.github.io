@@ -4,4 +4,6 @@ function unmute() {
     video.play();
 }
 
-document.getElementById('glorp-video').addEventListener('click', unmute);
+window.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementById('glorp-video').addEventListener('click', unmute);
+});
