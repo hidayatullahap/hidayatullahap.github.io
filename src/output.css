@@ -570,6 +570,10 @@ video {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -587,8 +591,8 @@ video {
   padding: 1rem;
 }
 
-.align-middle {
-  vertical-align: middle;
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -605,6 +609,11 @@ video {
   color: rgb(133 159 61 / var(--tw-text-opacity, 1));
 }
 
+.text-lightest {
+  --tw-text-opacity: 1;
+  color: rgb(246 252 223 / var(--tw-text-opacity, 1));
+}
+
 @keyframes text {
   0%,
     100% {
@@ -618,4 +627,13 @@ video {
 
 .animate-text {
   animation: text 3s infinite;
+}
+
+.background {
+  background-image: url('../resource/media/bg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
 }

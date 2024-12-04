@@ -5,6 +5,6 @@ function unmute() {
 }
 
 window.onload = function () {
-    document.getElementById('glorp-video').addEventListener('click', unmute);
+    document.getElementById('glorp').addEventListener('click', unmute);
     document.title = "prasetyo's mothership"
 }
