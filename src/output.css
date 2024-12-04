@@ -576,7 +576,7 @@ video {
 
 .bg-darkest {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 26 25 / var(--tw-bg-opacity, 1));
+  background-color: rgb(25 25 25 / var(--tw-bg-opacity, 1));
 }
 
 .p-4 {
