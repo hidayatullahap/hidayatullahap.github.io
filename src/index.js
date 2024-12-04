@@ -1,6 +1,6 @@
 function unmute() {
     var video = document.getElementById('glorp');
-    video.muted = false;
+    video.muted = !video.muted;
     video.play();
 }
 
