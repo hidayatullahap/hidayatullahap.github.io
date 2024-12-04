@@ -604,3 +604,18 @@ video {
   --tw-text-opacity: 1;
   color: rgb(133 159 61 / var(--tw-text-opacity, 1));
 }
+
+@keyframes text {
+  0%,
+    100% {
+    color: #F6FCDF;
+  }
+
+  50% {
+    color: #859F3D;
+  }
+}
+
+.animate-text {
+  animation: text 3s infinite;
+}

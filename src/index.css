@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes text {
+
+    0%,
+    100% {
+        color: theme('colors.lightest');
+    }
+
+    50% {
+        color: theme('colors.light');
+    }
+}
+
+.animate-text {
+    animation: text 3s infinite;
+}
