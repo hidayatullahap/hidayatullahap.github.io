@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-    p {
-        color: #63DB7B;
-    }
-</style>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="resource/lib/tailwind-3.4.15.js"></script>
+    <script src="./resource/lib/tailwind-3.4.15.js"></script>
 </head>
 
-<body>
+<body class="bg-black">
     <div class="flex align-middle justify-center p-4">
         <div id="glorp-video" class="flex flex-col">
             <video id="glorp" width="300" height="300" autoplay loop muted>
-                <source src="resource/media/glorp.mp4" type="video/mp4">
+                <source src="./resource/media/glorp.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <button class="m-4 text-green-500 font-bold text-2xl">Glorp</button>
         </div>
     </div>
-    <script src="scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
