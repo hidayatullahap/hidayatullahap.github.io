@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    <div class="flex flex-auto align-middle justify-center p-4">
-        <video id="glorp" width="300" height="300" autoplay loop muted>
-            <source src="resource/media/glorp.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <button id="glorp-btn">Glorp</button>
+    <div class="flex align-middle justify-center p-4">
+        <div id="glorp-video" class="flex flex-col">
+            <video id="glorp" width="300" height="300" autoplay loop muted>
+                <source src="resource/media/glorp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="m-4 text-green-500 font-bold text-2xl">Glorp</button>
+        </div>
     </div>
     <script src="scripts/index.js"></script>
 </body>
