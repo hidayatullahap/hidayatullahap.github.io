@@ -31,7 +31,8 @@ window.onload = function () {
         const statusElement = document.getElementById(element.id);
 
         isServerUp(element.url).then((isUp) => {
-            statusElement.innerText = "server is: " + isUp ? 'up' : 'down';
+            const stat = isUp ? 'up' : 'down';
+            statusElement.innerText = `Website is ${stat}`;
         });
     });
 }
