@@ -21,7 +21,7 @@ window.onload = function () {
 
     const websites = [{
         id: 'blog-status',
-        url: 'https://kucing.dev/'
+        url: 'https://blog.kucing.dev/'
     }, {
         id: 'pokemon-status',
         url: 'https://pokemon.kucing.dev/'
@@ -31,7 +31,7 @@ window.onload = function () {
         const statusElement = document.getElementById(element.id);
 
         isServerUp(element.url).then((isUp) => {
-            statusElement.innerText = isUp ? 'up' : 'down';
+            statusElement.innerText = "server is: " + isUp ? 'up' : 'down';
         });
     });
 }
