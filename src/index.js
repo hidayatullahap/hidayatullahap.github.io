@@ -13,6 +13,21 @@ async function isServerUp(url) {
     }
 }
 
+function calculateYearsOfExperience(startMonth, startYear) {
+    const startDate = new Date(startYear, startMonth - 1);
+    const currentDate = new Date();
+
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+    if (
+        currentDate.getMonth() < startDate.getMonth() ||
+        (currentDate.getMonth() === startDate.getMonth() && currentDate.getDate() < startDate.getDate())
+    ) {
+        years--;
+    }
+
+    return years;
+}
+
 function serverStatus() {
     const websites = [{
         id: 'pokemon-status',
@@ -60,6 +75,9 @@ function paralax() {
 window.onload = function () {
     document.getElementById('glorp').addEventListener('click', unmute);
     document.title = "prasetyo's mothership"
+
+    const yearsOfExperience = calculateYearsOfExperience(4, 2018);
+    document.getElementById('yoe').textContent = `with ${yearsOfExperience} years of experience`
 
     serverStatus();
     paralax();
