@@ -7,7 +7,6 @@ function unmute() {
 async function isServerUp(url) {
     try {
         const response = await fetch(url, { method: 'HEAD' });
-        console.log(response);
         return response.ok;
     } catch (error) {
         return false;
