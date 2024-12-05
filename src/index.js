@@ -19,18 +19,18 @@ window.onload = function () {
     document.title = "prasetyo's mothership"
 
     const websites = [{
+        id: 'pokemon-status',
+        url: 'https://pokemon.kucing.dev/'
+    }, {
         id: 'blog-status',
         url: 'https://blog.kucing.dev/',
         alwaysUp: true
-    }, {
-        id: 'pokemon-status',
-        url: 'https://pokemon.kucing.dev/'
     }]
 
     websites.forEach(website => {
         const statusElement = document.getElementById(website.id);
 
-        if (website.alwaysUp) {
+        if (website?.alwaysUp) {
             statusElement.innerText = 'Website is up';
             return;
         }
