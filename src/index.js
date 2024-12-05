@@ -20,16 +20,22 @@ window.onload = function () {
 
     const websites = [{
         id: 'blog-status',
-        url: 'https://blog.kucing.dev/'
+        url: 'https://blog.kucing.dev/',
+        alwaysUp: true
     }, {
         id: 'pokemon-status',
         url: 'https://pokemon.kucing.dev/'
     }]
 
-    websites.forEach(element => {
-        const statusElement = document.getElementById(element.id);
+    websites.forEach(website => {
+        const statusElement = document.getElementById(website.id);
 
-        isServerUp(element.url).then((isUp) => {
+        if (website.alwaysUp) {
+            statusElement.innerText = 'Website is up';
+            return;
+        }
+
+        isServerUp(website.url).then((isUp) => {
             const stat = isUp ? 'up' : 'down';
             statusElement.innerText = `Website is ${stat}`;
         });
