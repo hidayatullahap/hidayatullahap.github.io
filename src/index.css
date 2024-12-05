@@ -20,7 +20,7 @@
 
 .background {
     background-image: url('../resource/media/bg.webp');
-    background-size: cover;
+    background-size: 150%;
     background-position: center;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
