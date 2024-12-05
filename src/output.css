@@ -614,6 +614,10 @@ video {
   color: rgb(246 252 223 / var(--tw-text-opacity, 1));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 @keyframes text {
   0%,
     100% {
